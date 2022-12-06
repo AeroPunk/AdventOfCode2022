@@ -9,7 +9,7 @@ function findMarker() {
 	}
 }
 
-function findMarker2() {
+function findMarkerPart2() {
 	for (let i = 13; i < input.length; i++) {
 		const chars = input.slice(i - 13, i + 1);
 		if (chars.length === [...new Set(chars)].length) {
@@ -18,4 +18,4 @@ function findMarker2() {
 	}
 }
 
-console.log(`Part 1: ${findMarker()}\nPart 2: ${findMarker2()}`);
+console.log(`Part 1: ${findMarker()}\nPart 2: ${findMarkerPart2()}`);

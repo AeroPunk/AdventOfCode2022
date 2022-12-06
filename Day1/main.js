@@ -2274,8 +2274,6 @@ function formatInput(rawInput) {
 	return elvesList;
 }
 
-const formattedInput = formatInput(input);
-
 function getMaxTotal(formattedInput) {
 	let max = 0;
 	for (let i = 0; i < formattedInput.length; i++) {
@@ -2287,8 +2285,6 @@ function getMaxTotal(formattedInput) {
 	}
 	return max;
 }
-
-console.log("Part 1: " + getMaxTotal(formattedInput));
 
 function getTopThreeTotal(formattedInput) {
 	return formattedInput
@@ -2304,4 +2300,8 @@ function getTopThreeTotal(formattedInput) {
 		}, 0);
 }
 
-console.log(getTopThreeTotal(formattedInput));
+const formattedInput = formatInput(input);
+
+console.log("Part 1: " + getMaxTotal(formattedInput));
+
+console.log("Part 1: " + getTopThreeTotal(formattedInput));

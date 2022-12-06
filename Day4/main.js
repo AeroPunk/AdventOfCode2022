@@ -1000,8 +1000,7 @@ const input = `94-97,31-95
 23-54,22-55`.split(/\n/);
 
 function generateArrays(sections) {
-	let section1 = [];
-	let section2 = [];
+	let [section1, section2] = [[], []];
 	let formatInput = sections.split(",").map((x) => x.split("-"));
 	for (
 		let i = parseInt(formatInput[0][0]);

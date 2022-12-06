@@ -2501,8 +2501,6 @@ A X
 A X
 C Y`.split(/\n/);
 
-let totalScore = 0;
-
 function GameOutcome(me, opponent) {
 	if (
 		(me === "X" && opponent === "A") ||
@@ -2551,6 +2549,8 @@ function determineMove(opponent, outcome) {
 	}
 	return "Z";
 }
+
+let totalScore = 0;
 
 input.forEach((game) => {
 	let gamescore = 0;
